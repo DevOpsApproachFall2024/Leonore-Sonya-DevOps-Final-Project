@@ -9,3 +9,10 @@ app.get('/', function (req, res) {
 })
 
 app.listen(3000)
+
+//fibonacci calculator route
+app.get('/fibonacci/:num', function(req, res) {
+    let {num} = req.params;
+    res.send('Fibonacci Calculator')
+})
+
