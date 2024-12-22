@@ -8,8 +8,8 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-//fibonacci calculator route
-app.get('/fibonacci/:num', function(req, res) {
+//factotial calculator route
+app.get('/factorial/:num', function(req, res) {
   let {num} = req.params;
 
   //parse the number to an integer
@@ -21,20 +21,18 @@ app.get('/fibonacci/:num', function(req, res) {
   }
 
   //calculate fibonacci series
-  const fibonacci = (n) => {
-    if (n === 0) return [0];
-    if (n === 1) return [0, 1];
-
-    let series = [0, 1];
+  const factorial = (n) => {
+    if (n === 0  || n === 1 ) return 1;
+    let result = 1;
     for (let i = 2; i <= n; i++) {
-        series.push(series[i - 1] + series[i - 2]);
+        result *= i;
     }
-    return series;
+    return result;
   }
 
   //return fibonacci series
-  const result = fibonacci(num);
-  res.json({fibonacci: result});
+  const result = factorial(num);
+  res.json({factorial: result});
 })
 
 // Start Server
