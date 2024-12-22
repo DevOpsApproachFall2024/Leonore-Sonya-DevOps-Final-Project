@@ -1,0 +1,151 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/baubles.jpg');  /* Set background image */
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center;  /* Centers the image */
+    background-attachment: fixed;  /* Keeps the background fixed when scrolling */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+/* Navbar styling */
+#navBar {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#navBar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+#navBar a:hover {
+    text-decoration: underline;
+}
+
+/* Tony icon animation */
+.tony-icon {
+    font-size: 30px;
+    display: inline-block;
+    animation: moveIcon 2s ease-in-out infinite;
+}
+
+.tony-icon i {
+    margin-right: 8px;
+}
+
+@keyframes moveIcon {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Main content styling */
+#mainContent {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255, 99, 99, 0.557);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(252, 193, 193, 0.361);
+}
+
+#mainContent h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+#mainContent h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(0, 2, 2);
+    transition: background-color 0.3s ease;
+}
+
+.gay {
+    background: linear-gradient(to right, rgb(255, 113, 113), rgb(255, 206, 114), rgb(245, 245, 124), rgb(83, 165, 83), rgb(128, 128, 249), rgb(123, 70, 160), rgb(239, 148, 239));
+    border-color: 2px solid linear-gradient(to right, rgb(239, 148, 239), rgb(123, 70, 160), rgb(128, 128, 249), rgb(83, 165, 83), rgb(245, 245, 124), rgb(255, 206, 114), rgb(255, 113, 113));
+}
+
+.gay:hover {
+    background: linear-gradient(to right, rgb(239, 148, 239), rgb(123, 70, 160), rgb(128, 128, 249),  rgb(83, 165, 83), rgb(245, 245, 124), rgb(255, 206, 114), rgb(255, 113, 113));
+    border-color: 2px solid linear-gradient(to right,  rgb(255, 113, 113), rgb(255, 206, 114), rgb(245, 245, 124), rgb(83, 165, 83), rgb(128, 128, 249), rgb(123, 70, 160), rgb(239, 148, 239));
+}
+
+.straight {
+    background-color: #e74c3c;
+    border: 2px solid #27ae60;
+}
+
+.straight:hover {
+    background-color: #27ae60;
+    border-color: #e74c3c;
+}
+
+.questioning {
+    background-color: #f39c12;
+    font-size: 24px;
+    text-align: center;
+}
+
+.questioning:hover {
+    background-color: #e67e22;
+}
+
+/* Footer styling */
+#footer {
+    background-color: #175212a5;
+    color: rgba(255, 255, 255, 0.253);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Image styling */
+#navBar img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
