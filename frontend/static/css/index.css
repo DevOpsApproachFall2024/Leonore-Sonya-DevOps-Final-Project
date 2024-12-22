@@ -17,47 +17,6 @@ h2, h3 {
     color: #2c3e50;
 }
 
-/* Navbar styling */
-#navBar {
-    background-color: #e74c3c;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-#navBar a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-#navBar a:hover {
-    text-decoration: underline;
-}
-
-/* Tony icon animation */
-.tony-icon {
-    font-size: 30px;
-    display: inline-block;
-    animation: moveIcon 2s ease-in-out infinite;
-}
-
-.tony-icon i {
-    margin-right: 8px;
-}
-
-@keyframes moveIcon {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 /* Main content styling */
 #mainContent {
     padding: 40px;
@@ -119,33 +78,4 @@ h2, h3 {
 
 .questioning:hover {
     background-color: #e67e22;
-}
-
-/* Footer styling */
-#footer {
-    background-color: #175212a5;
-    color: rgba(255, 255, 255, 0.253);
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-#footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0 15px;
-}
-
-#footer a:hover {
-    text-decoration: underline;
-}
-
-/* Image styling */
-#navBar img {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
 }
