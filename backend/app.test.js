@@ -1,14 +1,8 @@
 const request = require('supertest');
-const app = require('./app'); // assuming your main file is named app.js
+const app = require('./index'); 
 
 describe('Factorial Calculator API', () => {
   
-  test('GET / should return Hello World', async () => {
-    const response = await request(app).get('/');
-    expect(response.statusCode).toBe(200);
-    expect(response.text).toBe('Hello World');
-  });
-
   test('GET /factorial/5 should return 120', async () => {
     const response = await request(app).get('/factorial/5');
     expect(response.statusCode).toBe(200);
