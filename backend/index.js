@@ -20,7 +20,7 @@ app.get('/factorial/:num', function(req, res) {
       return res.status(400).send('Please enter a positive number');
   }
 
-  //calculate fibonacci series
+  //calculate factorial series
   const factorial = (n) => {
     if (n === 0  || n === 1 ) return 1;
     let result = 1;
@@ -30,7 +30,7 @@ app.get('/factorial/:num', function(req, res) {
     return result;
   }
 
-  //return fibonacci series
+  //return factorial series
   const result = factorial(num);
   res.json({factorial: result});
 })
