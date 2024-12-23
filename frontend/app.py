@@ -7,6 +7,14 @@ app = Flask(__name__)
 def home():
    return render_template('index.html')
 
+@app.route('/informative')
+def informative():
+    return render_template('informative.html')
+
+@app.route('/queerPeople')
+def queer_people():
+    return render_template('queerPeople.html')
+
 @app.route('/tony')
 def tony():
     return render_template('tony.html')
