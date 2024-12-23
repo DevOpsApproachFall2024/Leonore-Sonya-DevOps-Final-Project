@@ -1,11 +1,14 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const app = express()
 
 // anything we do that is math related will be here. 
 // we can make it respond with a link so that everything else isn't soley on the front end, this can be discussed. 
 
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
 
-//factorial calculator route
+//factotial calculator route
 app.get('/factorial/:num', function(req, res) {
   let {num} = req.params;
 
@@ -35,5 +38,3 @@ app.get('/factorial/:num', function(req, res) {
 // Start Server
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-module.exports = app;
