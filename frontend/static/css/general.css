@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/baubles.jpg');  /* Set background image */
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center;  /* Centers the image */
+    background-attachment: fixed;  /* Keeps the background fixed when scrolling */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar styling */
+#navBar {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#navBar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+#navBar a:hover {
+    text-decoration: underline;
+}
+
+/* Tony icon animation */
+.tony-icon {
+    font-size: 30px;
+    display: inline-block;
+    animation: moveIcon 2s ease-in-out infinite;
+}
+
+.tony-icon i {
+    margin-right: 8px;
+}
+
+@keyframes moveIcon {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Footer styling */
+#footer {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #175212a5;
+    color: white;
+    position: relative; /* Default positioning */
+    bottom: 0; /* Ensure it aligns correctly if content is short */
+    width: 100%; /* Spans full width */
+    font-family: 'Arial', sans-serif;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Image styling */
+#navBar img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
