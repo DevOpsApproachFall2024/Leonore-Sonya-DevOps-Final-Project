@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Flask App!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">
+    <!-- Include Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <div id="navBar">
+        <a href="/">Home</a>
+        <a href="/tony" class="tony-icon">
+            <i class="fas fa-star"></i>
+        </a>
+        <a href="/factorial">
+            Why would you wanna think about Math during the holidays TToTT
+        </a>
+    </div>
+
+    <div id="mainContent">
+        <h2> Hello! Happy Holidays!</h2>
+        <h3> Are you Queer, Straight, or Questioning?</h3>
+        <a class="button gay" href="/queer"> Queer </a>
+        <a class="button straight" href="/informative"> Straight </a>
+        <a class="button questioning" href="/informative"> ???? </a>
+    </div>
+
+    <div id="footer">
+        <a href="/20pls">20 days of Christmas?</a>
+        <a href="/never">Want to give up?</a>
+    </div>
 </body>
 </html>
