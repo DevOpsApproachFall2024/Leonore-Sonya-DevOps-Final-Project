@@ -1,0 +1,69 @@
+.body {
+    display: flex;
+}
+
+/* Mariah Section Styling */
+#Mariah {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border: 2px solid #ff4d4d; /* Festive red border */
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Mariah h2 {
+    color: #ff3333; /* Bright red for holiday vibes */
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+#Mariah h3 {
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+#Mariah iframe {
+    border: 3px solid #33cc33; /* Green border for Christmas contrast */
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+/* MariahBroke Section Styling */
+#MariahBroke {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 250, 240, 0.9); /* Warm beige background */
+    border: 2px solid #ffa07a; /* Light coral border */
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#MariahBroke h2 {
+    color: #b22222; /* Firebrick red */
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+#MariahBroke p {
+    color: #555; /* Neutral text color */
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+#MariahBroke h3 {
+    color: #228b22; /* Forest green */
+    margin-bottom: 20px;
+    font-family: 'Verdana', sans-serif;
+}
+
+#MariahBroke iframe {
+    border: 3px solid #ff8c00; /* Orange border for contrast */
+    border-radius: 5px;
+    max-width: 100%;
+}
