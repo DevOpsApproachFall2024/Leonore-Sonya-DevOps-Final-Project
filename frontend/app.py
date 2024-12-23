@@ -12,7 +12,7 @@ def home():
 def informative():
     return render_template('informative.html')
 
-@app.route('/queerPeople')
+@app.route('/queer')
 def queer_people():
     return render_template('queerPeople.html')
 
@@ -49,7 +49,7 @@ def factorial_page():
 def never():
     return render_template('giveup.html')
 
-@app.route('/plstwenty')
+@app.route('/20pls')
 def twenty():
     return render_template('plstwenty.html')
   
