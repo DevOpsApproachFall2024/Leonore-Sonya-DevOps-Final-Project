@@ -7,6 +7,7 @@ app = Flask(__name__)
 def home():
    return render_template('index.html')
 
+
 @app.route('/informative')
 def informative():
     return render_template('informative.html')
@@ -43,6 +44,14 @@ def factorial_page():
 
     # For GET requests, just render the form
     return render_template('factorial.html')
-    
+  
+@app.route('/never')
+def never():
+    return render_template('giveup.html')
+
+@app.route('/plstwenty')
+def twenty():
+    return render_template('plstwenty.html')
+  
 if __name__ == '__main__':
     app.run(debug=True)
