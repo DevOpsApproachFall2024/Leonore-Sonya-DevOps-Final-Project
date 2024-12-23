@@ -1,0 +1,70 @@
+/* plstwenty.css */
+body {
+    background-color: #f7f7f7; /* Light background color for contrast */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    padding: 50px 0;
+}
+
+#holdContent {
+    background-color: #cdf9dfe8; /* Christmas green for the content area */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 60%;
+    margin: 0 auto;
+    color: #fff; /* White text to contrast with the green background */
+
+    border: 10px solid transparent;
+    border-image: linear-gradient(45deg, #e74c3c 25%, #fff 25%, #fff 50%, #e74c3c 50%, #e74c3c 75%, #fff 75%, #fff) 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e74c3c; /* Red accent color for emphasis */
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #2ecc71; /* Green for a positive, fresh vibe */
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #3498db; /* Blue for a calm, professional feel */
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #f39c12; /* Yellow-orange for some playful contrast */
+}
+
+h5 {
+    font-size: 1.4rem;
+    color: #9b59b6; /* Purple for creativity */
+}
+
+h6 {
+    font-size: 1.2rem;
+    color: #7f8c8d; /* Neutral gray to tone down */
+}
+
+/* Adding hover effects to headings */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Extra spacing and line-height for better readability */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Ensuring there's some space between the elements */
+#holdContent p, #holdContent h1, #holdContent h2, #holdContent h3, #holdContent h4, #holdContent h5, #holdContent h6 {
+    margin-bottom: 20px;
+}
