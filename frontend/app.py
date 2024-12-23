@@ -4,9 +4,12 @@ import requests
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return 'Hello, World!'
+def home():
+   return render_template('index.html')
 
+@app.route('/tony')
+def tony():
+    return render_template('tony.html')
 
 @app.route('/factorial', methods=['GET', 'POST'])
 def factorial_page():
