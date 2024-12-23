@@ -1,15 +1,13 @@
 FROM node:20-alpine
 
-WORKDIR /usr/src/app
+WORKDIR /node-backend
 
 COPY package*.json ./
 
 RUN npm install
 
+COPY . .
+
 EXPOSE 3000
-
-ENV NODE_ENV=production
-
-RUN npm test
 
 CMD ["node", "index.js"]
