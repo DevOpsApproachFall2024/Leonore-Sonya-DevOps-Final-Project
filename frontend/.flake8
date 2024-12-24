@@ -1,0 +1,13 @@
+[flake8]
+# Ignore all warnings except for syntax errors
+ignore =  E111, E302, E305, E501
+
+# Select only errors related to syntax and actual code issues
+select = E,F
+
+# Exclude specific files and directories
+exclude =
+    .git,
+    __pycache__,
+    build,
+    dist
