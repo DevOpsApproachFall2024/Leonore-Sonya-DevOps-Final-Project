@@ -4,7 +4,8 @@
   },
  
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --output-file backendReport.json --ignore-pattern '*.test.js' --format json ."
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
