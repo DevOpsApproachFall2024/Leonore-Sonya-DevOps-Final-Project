@@ -1,4 +1,4 @@
-name: Linting Frontend Workflow
+name: Linting Backend Workflow
 
 on:
   pull_request:
