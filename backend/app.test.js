@@ -1,6 +1,12 @@
 const request = require('supertest');
 const app = require('./index'); 
 
+describe('API Tests', () => {
+  afterAll((done) => {
+    // Close the server after all tests are done
+    server.close(done);
+  });
+
 describe('Factorial Calculator API', () => {
   
   test('GET /factorial/5 should return 120', async () => {
