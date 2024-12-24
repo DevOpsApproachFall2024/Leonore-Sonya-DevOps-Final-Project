@@ -4,7 +4,7 @@ const app = express()
 // anything we do that is math related will be here. 
 
 //factotial calculator route
-app.get('/factorial/:num', function(req, res) {
+ap.get('/factorial/:num', function(req, res) {
   let {num} = req.params;
 
   //parse the number to an integer
