@@ -31,7 +31,7 @@ def factorial_page():
 
         try:
             # Send a request to the Express backend
-            response = requests.get(f'http://localhost:3000/factorial/{number}')
+            response = requests.get(f'http://backend:3000/factorial/{number}')
             response.raise_for_status()  # Raise an exception for HTTP errors
             data = response.json()
 
