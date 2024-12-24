@@ -1,34 +1,48 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
-// anything we do that is math related will be here. 
+// Local cache for storing calculated factorials
+const factorialCache = {};
 
-//factotial calculator route
-app.get('/factorial/:num', function(req, res) {
-  let {num} = req.params;
+// Factorial calculator route
+app.get('/factorial/:num', function (req, res) {
+  let { num } = req.params;
 
-  //parse the number to an integer
+  // Parse the number to an integer
   num = parseInt(num);
 
-  //validate input
+  // Validate input
   if (isNaN(num) || num < 0) {
-      return res.status(400).send('Please enter a positive number');
+    return res.status(400).send('Please enter a positive number');
   }
 
-  //calculate factorial series
+  // Function to calculate factorial with caching
   const factorial = (n) => {
-    if (n === 0  || n === 1 ) return 1;
+    // Check if result is in the cache
+    if (factorialCache[n] !== undefined) {
+      return factorialCache[n];
+    }
+
+    // Base case
+    if (n === 0 || n === 1) {
+      factorialCache[n] = 1;
+      return 1;
+    }
+
+    // Calculate factorial and store in cache
     let result = 1;
     for (let i = 2; i <= n; i++) {
-        result *= i;
+      result *= i;
     }
-    return result;
-  }
 
-  //return factorial series
+    factorialCache[n] = result; // Cache the result
+    return result;
+  };
+
+  // Return factorial series
   const result = factorial(num);
-  res.json({factorial: result});
-})
+  res.json({ factorial: result });
+});
 
 // Start Server
 const PORT = 3000;
